@@ -228,17 +228,6 @@ zip -r -q expert-topic-guide.skill skill-expert-topic-guide \
 
 The `.skill` archive contains only the runtime payload (`SKILL.md`, `references/`, `agents/`, `assets/`) and is the only artifact required to install the skill on any host.
 
-## Reproduce the Benchmark
-
-The 4 evaluations live in a separate development workspace (not in this skill repo). Each eval has a prompt, an expected output description, and 8–9 binary assertions. The benchmark protocol:
-
-1. Run each prompt twice — once with `expert-topic-guide` loaded, once without.
-2. Save responses for both configurations.
-3. Grade each response against its assertions and persist the gradings.
-4. Aggregate gradings into a `benchmark.json` and regenerate charts with the included `make_charts.py` script.
-
-The chart script reads `benchmark.json` and writes the four PNGs in `assets/`. Re-run it after every benchmark to keep README visuals current.
-
 ## Repository Layout
 
 ```text
