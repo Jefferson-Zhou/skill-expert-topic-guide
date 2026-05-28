@@ -14,7 +14,6 @@ __pycache__/
 .python-version
 
 # Build / package artifacts
-*.skill
 dist/
 build/
 *.egg-info/
@@ -29,5 +28,3 @@ build/
 .scratch/
 .cache/
 
-# Claude / agent local state (keep skill files only)
-.claude/
