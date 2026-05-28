@@ -1,0 +1,33 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.python-version
+
+# Build / package artifacts
+*.skill
+dist/
+build/
+*.egg-info/
+
+# Local config / secrets
+.env
+.env.local
+
+# Temp / scratch
+*.log
+*.tmp
+.scratch/
+.cache/
+
+# Claude / agent local state (keep skill files only)
+.claude/

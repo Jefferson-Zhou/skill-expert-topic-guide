@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expert Topic Guide"
+  short_description: "Expert roadmaps for unfamiliar domains"
+  default_prompt: "Use $expert-topic-guide to build a fast expert-guided learning path for an unfamiliar topic."
